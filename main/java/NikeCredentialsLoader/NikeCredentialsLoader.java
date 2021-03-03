@@ -13,7 +13,7 @@ public class NikeCredentialsLoader {
     public NikeCredentialsLoader(boolean sandbox) throws Exception{
         this.sandbox = sandbox;
 
-        MongoClient mongoClient = new MongoClient(new MongoClientURI("mongodb+srv://root:NickBL$2015@nikebot.nx5tj.mongodb.net/NikeBot?retryWrites=true&w=majority"));
+        MongoClient mongoClient = new MongoClient(new MongoClientURI(""));
         DB nikeCredsDatabase = mongoClient.getDB("NikeBot");
         Logger mongoLoger = Logger.getLogger("org.mongodb.driver");
         mongoLoger.setLevel(Level.SEVERE);
